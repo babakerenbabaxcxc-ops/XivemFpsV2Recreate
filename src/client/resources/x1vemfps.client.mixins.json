@@ -1,0 +1,7 @@
+{
+  "required": false,
+  "package": "x1vemfps.modid.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [],
+  "injectors": { "defaultRequire": 0 }
+}
