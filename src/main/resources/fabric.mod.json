@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "x1vemfps",
+	"version": "${version}",
+	"name": "X1vemFPS",
+	"description": "Minimal performance HUD displaying FPS, CPU usage and GPU status.",
+	"authors": [
+		"X1vemFPS"
+	],
+	"contact": {
+		"sources": "https://github.com/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/x1vemfps/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"x1vemfps.modid.X1vemFPS"
+		],
+		"client": [
+			"x1vemfps.modid.client.X1vemFPSClient"
+		]
+	},
+	"mixins": [
+		"x1vemfps.mixins.json",
+		{
+			"config": "x1vemfps.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
